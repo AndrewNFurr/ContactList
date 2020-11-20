@@ -1,9 +1,9 @@
-export const fetchAPI = async (url, method="GET", sendData=null) => {
+async function fetchAPI(url, method="GET", sendData=null) {
     const fetchOptions = {
       method: method,
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuZHJldyIsImlhdCI6MTYwNTU3MzE0OCwiZXhwIjoxNjA2MTc3OTQ4fQ.UVdeaU2J89nu6R7Yg1vH5WxmFWXz8PCKn9TBnum5nfc'
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuZHJldyIsImlhdCI6MTYwNTU3OTQ0MiwiZXhwIjoxNjA2MTg0MjQyfQ.DzczKUz2dVrLpdRGayS4yEiHC9aPWPnuqCoCqDstY-s'
       }
     };
   
@@ -16,3 +16,5 @@ export const fetchAPI = async (url, method="GET", sendData=null) => {
   
     return data;
   }
+
+  export default fetchAPI;

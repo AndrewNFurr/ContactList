@@ -1,0 +1,25 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.contact-form {
+    position: absolute;
+    left: 20rem;
+    top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40em;
+    height: 20em;
+
+    background-color: rgb(226, 225, 225);
+}
+
+.contact-form input {
+    width: 150px;
+}

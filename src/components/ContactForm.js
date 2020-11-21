@@ -109,7 +109,6 @@ const ContactForm = (props) => {
                 <label>Content Type</label>
                 <select
                 value={contactType}
-                placeholder="Contact Type"
                 onChange={(event) => setContactType(event.target.value)}
                 >
                     {
@@ -118,12 +117,12 @@ const ContactForm = (props) => {
                         })
                     }
                 </select>
-                <button>{id ? "Edit Contact" : "Create Contact"}</button>
+                <button id='submit'>{id ? "Edit Contact" : "Create Contact"}</button>
+                <Link to='/'><div id='return'>Return</div></Link>
                 { madeChanges ? 
                     <div>
                         <h1>You've made a change to your Contact list!</h1>
-                        <p>Continue to make changes or click below to return to your contacts</p>
-                        <Link to='/'>Contacts</Link>
+                        <p>Continue to make changes or click above to return to your contacts</p>
                     </div> : null
                 }
     </form>

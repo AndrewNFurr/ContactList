@@ -1,0 +1,8 @@
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form button {
+    height: 20px;
+}

@@ -6,20 +6,47 @@
   }
 
 .contact-form {
-    position: absolute;
-    left: 20rem;
+    position: relative;
     top: 5rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 
     width: 40em;
-    height: 20em;
+    height: 25em;
 
-    background-color: rgb(226, 225, 225);
+    background-color: black;
+    color: rgb(188, 159, 221);
+    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.91);
+    border: 2px solid rgb(188, 159, 221);
+    border-radius: 5px;
+}
+
+.contact-form > * {
+    border-bottom: 1px solid rgb(188, 159, 221);
 }
 
 .contact-form input {
-    width: 150px;
+    width: 170px;
+    height: 25px;
+
+    color: black;
+    background-color: rgb(188, 159, 221);
+
+}
+
+#submit {
+    width: 10em;
+    height: 2em;
+
+    font-size: 20px;
+}
+
+#return {
+    text-decoration: none;
+    color: rgb(188, 159, 221);
+
+    font-size: 18px;
 }

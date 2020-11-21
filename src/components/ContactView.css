@@ -5,17 +5,59 @@
     box-sizing: border-box;
   }
 
-.contact-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+body {
+    background-color: rgb(173, 150, 199);
+}
+
+
+.list h2 {
+    background-color: rgb(156, 129, 189);
+    color: black
 }
 
 .contact {
-    border: 1px solid olive;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    border: 2px solid rgb(105, 88, 124);
+    color: rgb(188, 159, 221);
+    background-color: black;
+    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.91);
+
     margin: 5px;
     padding: 5px;
+
+    width: 60vw;
 }
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+}
+
+button {
+    background-color: rgb(188, 159, 221);
+    border-radius: 3px;
+    
+    margin-right: 5px;
+    margin-bottom: 5px;;
+}
+
+.list button {
+    height: 25px;
+    width: 240px;
+}
+
+.comment button {
+    border-radius: 2px;
+    margin-left: 5px;
+    height: 20px;
+    width: 80px;
+}
+
+
 
 
 

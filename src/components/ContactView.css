@@ -9,6 +9,9 @@ body {
     background-color: rgb(173, 150, 199);
 }
 
+.list{
+    padding-top: 10px;
+}
 
 .list h2 {
     background-color: rgb(156, 129, 189);
@@ -27,7 +30,7 @@ body {
     margin: 5px;
     padding: 5px;
 
-    width: 60vw;
+    width: 30vw;
 }
 
 .comment {

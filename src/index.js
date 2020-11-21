@@ -20,6 +20,7 @@ const App = () => {
     const [contactList, setContactList] = useState([])
     const [editableContact, setEditableContact] = useState({});
     const [search, setSearch] = useState('');
+    const [type, setType] = useState('')
 
     function addNewContact(newContact) {
         setContactList([...contactList, newContact])
@@ -79,10 +80,23 @@ const App = () => {
                             setSearch(event.target.value);
                             }} /></div>
                 </div>
+                <div id='split-list'>
                 <ContactView contactList={filteredContacts()}
                             setContactList={setContactList}
                             editableContact={editableContact}
-                            setEditableContact={setEditableContact}/>
+                            setEditableContact={setEditableContact}
+                            type={'work'}/>
+               <ContactView contactList={filteredContacts()}
+                            setContactList={setContactList}
+                            editableContact={editableContact}
+                            setEditableContact={setEditableContact}
+                            type={'personal'}/>
+               <ContactView contactList={filteredContacts()}
+                            setContactList={setContactList}
+                            editableContact={editableContact}
+                            setEditableContact={setEditableContact}
+                            type={'other'}/>
+                </div>
              </Route>
         </Switch>
     </Router>

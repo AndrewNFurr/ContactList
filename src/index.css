@@ -49,6 +49,8 @@ span {
 
     justify-content: space-between;
     align-items: center;
+
+    border-bottom: 2px solid black;
 }
 
 #search {
@@ -66,4 +68,10 @@ button:hover {
     background: black;
             width: 100%;
     color: rgb(188, 159, 221);
+}
+
+#split-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

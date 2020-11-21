@@ -8,12 +8,13 @@ const ContactView = ({
     contactList,
     setEditableContact,
     setContactList,
+    type
 }) => {
 
-    return <div className="list"
-                >
+    return <div className="list">
+        <h1>{type.toUpperCase()}</h1>
         {contactList.map(contact => {
-            return <div key={contact.id}
+            return  type === contact.contactType ? <div key={contact.id}
                         className='contact'>
                 <div className="info">
                     <h2>{contact.name} ({contact.contactType})</h2>
@@ -74,7 +75,7 @@ const ContactView = ({
                         </div>
                     }) : null
                 }
-            </div>
+            </div> : null
         })}
     </div>
 }
